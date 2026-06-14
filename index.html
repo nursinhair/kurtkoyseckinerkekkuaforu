@@ -4,128 +4,137 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seçkin Erkek Kuaförü</title>
-
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-margin:0;
+background:#050505;
 font-family:Arial,sans-serif;
-background:#111;
 color:white;
 }
-
 header{
-text-align:center;
-padding:40px 20px;
 background:#000;
+padding:20px;
+text-align:center;
+border-bottom:2px solid #c89b3c;
 }
-
 header h1{
-margin:0;
-font-size:40px;
+font-size:48px;
+color:#d4a74d;
 }
-
 header p{
-color:#bbb;
+margin-top:10px;
+font-size:20px;
 }
-
+.hero img{
+width:100%;
+display:block;
+}
 .container{
-max-width:1100px;
+width:95%;
+max-width:1400px;
 margin:auto;
 padding:20px;
 }
-
 .card{
-background:#1b1b1b;
+background:#0d0d0d;
+border:1px solid #c89b3c;
 border-radius:15px;
 padding:20px;
 margin-bottom:20px;
 }
-
-img{
-width:100%;
-border-radius:15px;
-}
-
 h2{
-color:#f7c948;
+color:#d4a74d;
+margin-bottom:15px;
 }
-
+.ustalar{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.usta{
+background:#111;
+padding:20px;
+border-radius:12px;
+border:1px solid #333;
+text-align:center;
+}
+.btn{
+display:inline-block;
+padding:10px 15px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+.ara{
+background:#d4a74d;
+color:black;
+}
+.wp{
+background:#25D366;
+color:white;
+}
 table{
 width:100%;
 border-collapse:collapse;
 }
-
 td{
 padding:12px;
 border-bottom:1px solid #333;
 }
-
-.btn{
-display:inline-block;
-padding:12px 18px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:10px;
-margin:5px;
-font-weight:bold;
-}
-
 footer{
 text-align:center;
-padding:20px;
-color:#888;
+padding:30px;
+color:#999;
 }
 </style>
 </head>
-
 <body>
-
 <header>
 <h1>SEÇKİN ERKEK KUAFÖRÜ</h1>
 <p>Kurtköy / Pendik / İstanbul</p>
 </header>
-
-<div class="container">
-
-<div class="card">
-<img src="dukkan.jpg" alt="Dükkanımız">
+<div class="hero">
+<img src="dukkan.jpg" alt="Seçkin Erkek Kuaförü">
 </div>
-
+<div class="container">
 <div class="card">
 <h2>Çalışma Saatleri</h2>
-<p>Pazartesi - Cumartesi: 09:00 - 22:00</p>
-<p>Pazar: Kapalı</p>
+<p>Pazartesi : 09:00 - 22:00</p>
+<p>Salı : 09:00 - 22:00</p>
+<p>Çarşamba : 09:00 - 22:00</p>
+<p>Perşembe : 09:00 - 22:00</p>
+<p>Cuma : 09:00 - 22:00</p>
+<p>Cumartesi : 09:00 - 22:00</p>
+<p>Pazar : Kapalı</p>
 </div>
-
 <div class="card">
 <h2>Ustalarımız</h2>
-
-<p><b>Sezer Seçkin Ermiş</b></p>
-<a class="btn" href="tel:05422949575">Ara</a>
-<a class="btn" href="https://wa.me/905422949575">WhatsApp</a>
-
-<br><br>
-
-<p><b>Ahmet Nursin Karaal</b></p>
-
-<br><br>
-
-<p><b>Selahattin Coşar</b></p>
-<a class="btn" href="tel:05516522619">Ara</a>
-<a class="btn" href="https://wa.me/905516522619">WhatsApp</a>
-
-<br><br>
-
-<p><b>Mehmet Efe Ermiş</b></p>
-<a class="btn" href="tel:05531632296">Ara</a>
-<a class="btn" href="https://wa.me/905531632296">WhatsApp</a>
-
+<div class="ustalar">
+<div class="usta">
+<h3>Sezer Seçkin Ermiş</h3>
+<a class="btn ara" href="tel:05422949575">Ara</a>
+<a class="btn wp" href="https://wa.me/905422949575">WhatsApp</a>
 </div>
-
+<div class="usta">
+<h3>Ahmet Nursin Karaal</h3>
+<a class="btn ara" href="tel:05441661028">Ara</a>
+<a class="btn wp" href="https://wa.me/905441661028">WhatsApp</a>
+</div>
+<div class="usta">
+<h3>Selahattin Coşar</h3>
+<a class="btn ara" href="tel:05516522619">Ara</a>
+<a class="btn wp" href="https://wa.me/905516522619">WhatsApp</a>
+</div>
+<div class="usta">
+<h3>Mehmet Efe Ermiş</h3>
+<a class="btn ara" href="tel:05531632296">Ara</a>
+<a class="btn wp" href="https://wa.me/905531632296">WhatsApp</a>
+</div>
+</div>
+</div>
 <div class="card">
 <h2>Fiyat Listesi</h2>
-
 <table>
 <tr><td>Saç Traşı</td><td>500 TL</td></tr>
 <tr><td>Sakal Traşı</td><td>250 TL</td></tr>
@@ -137,19 +146,15 @@ color:#888;
 <tr><td>Ağda</td><td>200 TL</td></tr>
 <tr><td>İple Kaş Alımı + Tasarım</td><td>300 TL</td></tr>
 </table>
-
 </div>
-
 <div class="card">
 <h2>Konum</h2>
-<p>Adres buraya eklenecek.</p>
+<p>Kurtköy / Pendik / İstanbul</p>
+<p>Buraya Google Harita linki eklenecek.</p>
 </div>
-
 </div>
-
 <footer>
-© Seçkin Erkek Kuaförü
+© 2026 Seçkin Erkek Kuaförü
 </footer>
-
 </body>
 </html>
